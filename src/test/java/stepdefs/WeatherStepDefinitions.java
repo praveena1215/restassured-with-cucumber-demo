@@ -18,10 +18,10 @@ public class WeatherStepDefinitions {
 	private String ENDPOINT_GET_BOOK_BY_ISBN = "http://api.weatherstack.com/current?access_key=4bb95b1299b55098b766112e7c1dff07";
 
 
-	@Given("^a weather exists with a city of \"([^\"]*)\"$")
-	public void a_weather_exists_with_a_city_of(String city){
-		request = given().param("query", city);
-		System.out.println(city);
+	@Given("^a weather exists with a city of ([^\"]*)")
+	public void a_weather_exists_with_a_city_of(String cityname){
+		request = given().param("query", cityname);
+		System.out.println(cityname);
 	}
 
 	@When("^a user retrieves the weather by city$")

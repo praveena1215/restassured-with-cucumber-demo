@@ -11,7 +11,9 @@
 	<url>http://maven.apache.org</url>
 
 	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>		
+    	<maven.build.timestamp.format>yyMMdd</maven.build.timestamp.format>
+    	<buildNumber>${maven.build.timestamp}</buildNumber>
 	</properties>
 
 	<dependencies>
@@ -89,12 +91,12 @@
 							<goal>generate</goal>
 						</goals>
 						<configuration>
-							<projectName>spring-boot-cucumber</projectName>
+							<projectName>cucumber-REST-Assured-API-Reports</projectName>
 							<outputDirectory>${project.build.directory}/cucumberReport/</outputDirectory>
 							<cucumberOutput>${project.build.directory}/cucumberReport/cucumber-json-report.json</cucumberOutput>
 							<skippedFails>false</skippedFails>
 							<enableFlashCharts>true</enableFlashCharts>
-							<buildNumber>42</buildNumber>
+							<buildNumber>1234</buildNumber>
 						</configuration>
 					</execution>
 				</executions>
