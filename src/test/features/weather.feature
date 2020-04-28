@@ -7,6 +7,13 @@ Scenario Outline: User calls web service to get weather by its city
 	Examples: 
 		|cityname |
 		| Chennai |
-		|Mumbai |
+		| Mumbai |
 		| Coimbatore|
 		| Trichy |
+		| Brussels |
+		| Amsterdam |
+		| Troy |
+		| Florence |
+		| Cairo |
+		| Centralia |
+		| Dixon |
